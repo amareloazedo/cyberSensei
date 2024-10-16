@@ -13,6 +13,7 @@ body {
 .geral{
     background-color: rgb(255, 255, 255);
     border-radius: 1rem;
+    border: 1px solid rgb(47, 47, 47);
 }
 hr {
     width: 500;
