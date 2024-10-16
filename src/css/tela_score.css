@@ -10,17 +10,19 @@ body {
     justify-content: space-between;
 
 }
+
 .geral{
     background-color: rgb(255, 255, 255);
     border-radius: 1rem;
 }
+
 hr {
     width: 500;
 }
+
 body br {
     line-height: 2;
 }
-
 
 .cor {
     margin-left: 250;

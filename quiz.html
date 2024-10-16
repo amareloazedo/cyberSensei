@@ -3,23 +3,53 @@
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Quiz</title>
+        <title>Desafio Cyber Sensei</title>
+
+        <link rel="stylesheet" href="src/css/quiz.css">
+        <link rel="stylesheet" href="src/css/resets.css">
+        <link rel="stylesheet" href="src/css/style.css">
     </head>
 
     <body>
-        <div id="formDesafio">
-            <div id="container-pergunta">
-                <p id="pergunta"></p>
-    
-                <div id="resposta"></div>
+        <header id="cabecalho" style="display: block;">
+            <img width="50px" class="logo" src="src/assets/img/logo CyberSensei.svg" alt="CyberSensei">
+        </header>
+        
+        <main>
+            <div id="formDesafio" class="grid-container">
+                <div id="container-pergunta">
+                    <p id="pergunta"></p>
+        
+                    <div id="resposta"></div>
+                </div>
+        
+                <div>
+                    <button type="submit" id="botao-seguir" class="hidden">Próxima Pergunta</button>
+                    <p id="resultado" class="hidden"></p>
+                </div>
             </div>
-    
-            <div>
-                <button id="botao-seguir" class="hidden">Próxima Pergunta</button>
-                <p id="resultado" class="hidden"></p>
+
+            <div class="overlay" id="overlay" style="display: none;"></div>
+
+            <div class="geral" id="resultCard" style="display: none;"> 
+                <div class="div-geral">
+                    <h3>Parabéns!</h3>
+
+                    <h3>Você concluiu o desafio!</h3>
+
+                    <hr>
+
+                    <p>Pontuação: <span id="scoreDisplay">
+                        <br>
+                    </span></p>
+                </div>   
+                
+                <div class="faixa" id="faixa">
+                    <h3>Você é faixa <span id="nomeFaixa"></span></h3>
+                </div>
             </div>
-        </div>
-    
+        </main>
+        
         <script src="src/js/questions.js"></script>
         <script src="src/js/chalenge.js"></script>
     </body>

@@ -1,0 +1,189 @@
+
+body {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+main {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+}
+
+header {
+    display: flex;
+    border: rgb(174, 17, 0) solid 1.75px;
+
+    border-radius: 75px;
+    width: 35%;
+    height: 50px;
+    padding: 5px 50px;
+    margin: 20px 0;
+
+    text-align: center;
+    justify-content: center;
+}
+
+header img {
+    width: 50px;
+}
+
+#formDesafio {
+    display: flex;
+    flex-direction: column;
+
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+}
+
+#pergunta {
+    background-color: #9F1717;
+    color: #fff;
+
+    border-radius: 25px;
+
+    font-weight: 600;
+    font-size: 20px;
+
+    padding: 150px 0;
+    width: 100%;
+}
+
+#resposta {
+    margin-top: 35px;
+    gap: 20px;
+
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    text-align: center;
+}
+
+#resposta p {
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.3);
+    background-color: #fff;
+    color: #000;
+
+    border-radius: 10px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    width: 300px;
+    height: 150px;
+    padding: 10px 20px;
+}  
+
+#resposta p:hover {
+    transition: 0.2s;
+    transform: scale(1.03);
+}
+
+.answer {
+    display: flex;
+    cursor: pointer; 
+    margin: 10px 0;
+}
+
+.selected {
+    filter: opacity(0.35);
+}
+
+#botao-seguir {
+    background-color: #9F1717;
+    color: #fff;
+
+    font-size: 15px;
+
+    border: none;
+    border-radius: 25px;
+    margin-top: 30px;
+    padding: 18px 50px;
+}
+
+.hidden {
+    display: none;
+}
+
+/* CARD DE RESULTADO */
+.geral{
+    background-color: white; 
+    color: #000;
+
+    text-align: center;
+    align-content: center;
+    justify-content: center;
+
+    width: 500px;
+    height: 425px;
+    position: fixed; 
+    top: 50%;
+    left: 50%; 
+    transform: translate(-50%, -50%); 
+    
+    border-radius: 25px; 
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.3);
+    z-index: 1000; 
+}
+
+
+.geral hr {
+    margin: 25px 0;
+}
+
+.geral h3 {
+    font-weight: 500;
+    font-size: 26px;
+    top: 100px;
+}
+
+.div-geral {
+    padding: 20px 0;
+}
+
+#resultCard {
+    display: none; 
+}
+
+.overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5); 
+    z-index: 999; 
+    display: none; 
+}
+
+hr {
+    width: 500;
+}
+
+.faixa {
+    display: flex;
+    background-color: rgb(47, 47, 47);
+    color: white;
+
+    margin-top: 60px;
+    padding: 20px 0;
+
+    width: 100%;
+    height: 50px;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.faixa span {
+    padding: 0;
+    margin: 0;
+}
+
+.faixa h3 {
+   font-size: 20px;
+   font-weight: 200;
+   padding: 0;
+   margin: 0;
+}
