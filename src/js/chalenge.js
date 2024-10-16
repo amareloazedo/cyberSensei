@@ -1,4 +1,3 @@
-
 // INDENTIFICADOR DA PERGUNTA ATUAL
 let perguntaAtualId = 0;
 
@@ -76,6 +75,9 @@ document.getElementById('botao-seguir').addEventListener('click', () => {
 function mostrarResultado() {
     const containerPergunta = document.getElementById('container-pergunta');
     const elementoResultado = document.getElementById('resultado');
+    const overlay = document.getElementById('overaly');
+    const resultCard = document.getElementById('resultCard');
+    const scoreDisplay = document.getElementById('scoreDisplay');
 
     const overlay = document.getElementById('overlay');
     const resultCard = document.getElementById('resultCard');
@@ -87,6 +89,7 @@ function mostrarResultado() {
     botaoSeguir.classList.add('hidden');
     containerPergunta.classList.add('hidden');
     elementoResultado.classList.remove('hidden');
+<<<<<<< HEAD
     scoreDisplay.textContent = `${pontuacao} / ${perguntasDesafio.length}`;
 
     escolherFaixa();
@@ -123,8 +126,19 @@ function escolherFaixa(){
         corFaixa.style.backgroundColor = '#D5D5D5';
         nomeFaixa.textContent = "Branca";
     }
+=======
+    scoreDisplay.textContent = `${pontuacao} de ${perguntasDesafio.length}`;
+    //resultElement.textContent = 'Você completou o quiz! Sua pontuação final é: ${score} de ${perguntasDesafio.length}';
+
+    resultCard.style.display = 'block';
+    overlay.style.display = 'block';
+>>>>>>> bad633bd90a3cacc6118c5690363c15904931304
 }
 
+overlay.addEventListener('click', function() {
+    resultCard.style.display = 'none';
+    overlay.style.display = 'none';
+});
 // COMEÇAR O QUIZ
 mostrarPergunta();
 

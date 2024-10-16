@@ -11,7 +11,6 @@ const perguntasDesafio = [
                 ],
         correct: 1
     },
-
     {
         question: "Qual é o principal objetivo de um firewall?",
         answers: [
@@ -55,7 +54,6 @@ const perguntasDesafio = [
             ],
         correct: 1
     },
-
     {
         question: "O que é um ataque DDoS?",
         answers: [
@@ -66,7 +64,6 @@ const perguntasDesafio = [
             ],
         correct: 1
     },
-
     {
         question: "O que é engenharia social?",
         answers: [
@@ -77,7 +74,6 @@ const perguntasDesafio = [
             ],
         correct: 0
     },
-
     {
         question: "Qual é a função do HTTPS?",
         answers: [
@@ -88,7 +84,6 @@ const perguntasDesafio = [
             ],
         correct: 1
     },
-
     {
         question: "O que é um cookie?",
         answers: [
@@ -99,7 +94,6 @@ const perguntasDesafio = [
             ],
         correct: 1
     },
-    
     {
         question: "O que deve ser feito para criar uma senha forte?",
         answers: [
