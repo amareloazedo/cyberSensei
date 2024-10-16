@@ -6,7 +6,6 @@ const perguntasDesafio = [
         answers: ["Brasília", "Pernambuco", "Rio de Janeiro", "São Paulo"],
         correct: 0
     },
-
     {
         question: "",
         answers: [""],
@@ -25,6 +24,31 @@ const perguntasDesafio = [
         correct: 0
     },
 
+    {
+        question: "",
+        answers: [""],
+        correct: 0
+    },
+    {
+        question: "",
+        answers: [""],
+        correct: 0
+    },
+    {
+        question: "",
+        answers: [""],
+        correct: 0
+    },
+    {
+        question: "",
+        answers: [""],
+        correct: 0
+    },
+    {
+        question: "",
+        answers: [""],
+        correct: 0
+    },
     {
         question: "",
         answers: [""],
