@@ -63,7 +63,7 @@ document.getElementById('botao-seguir').addEventListener('click', () => {
 function mostrarResultado() {
     const containerPergunta = document.getElementById('container-pergunta');
     const elementoResultado = document.getElementById('resultado');
-    const overlay = document.getElementById('overaly');
+    const overlay = document.getElementById('overlay');
     const resultCard = document.getElementById('resultCard');
     const scoreDisplay = document.getElementById('scoreDisplay');
 
@@ -72,6 +72,7 @@ function mostrarResultado() {
     scoreDisplay.textContent = `${pontuacao} de ${perguntasDesafio.length}`;
     //resultElement.textContent = 'Você completou o quiz! Sua pontuação final é: ${score} de ${perguntasDesafio.length}';
 
+    escolherFaixa();
     resultCard.style.display = 'block';
     overlay.style.display = 'block';
 }
@@ -80,6 +81,31 @@ overlay.addEventListener('click', function() {
     resultCard.style.display = 'none';
     overlay.style.display = 'none';
 });
+
+function escolherFaixa(){
+    const corFaixa = document.getElementById('cor');
+    const nomeFaixa = document.getElementById('nomeFaixa');
+
+    if(pontuacao === 10){
+        corFaixa.style.backgroundColor = 'rgb(47, 47, 47)';
+        nomeFaixa.textContent = "Preta";
+    }else if(pontuacao < 10 && pontuacao >= 7){
+        corFaixa.style.backgroundColor = 'brown';
+        nomeFaixa.textContent = "Marrom";
+    }else if(pontuacao < 7 && pontuacao >= 5){
+        corFaixa.style.backgroundColor = 'purple';
+        nomeFaixa.textContent = "Roxa";
+    }else if(pontuacao < 5 && pontuacao >= 3){
+        corFaixa.style.backgroundColor = 'yellow';
+        nomeFaixa.textContent = "Amarela";
+    }else if(pontuacao < 3 && pontuacao >= 1){
+        corFaixa.style.backgroundColor = 'blue';
+        nomeFaixa.textContent = "Azul";
+    }else{
+        corFaixa.style.backgroundColor = '#D5D5D5';
+        nomeFaixa.textContent = "Branca";
+    }
+}
 // COMEÇAR O QUIZ
 mostrarPergunta();
 
