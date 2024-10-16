@@ -3,31 +3,31 @@
 const perguntasDesafio = [
     {
         question: "Qual é a capital do Brasil?",
-        answers: ["Brasília", "Pernambuco", "Riio de Janeiro", "São Paulo"],
-        correct: 1
+        answers: ["Brasília", "Pernambuco", "Rio de Janeiro", "São Paulo"],
+        correct: 0
     },
 
     {
         question: "",
         answers: [""],
-        correct: 2
+        correct: 0
     },
 
     {
         question: "",
         answers: [""],
-        correct: 3
+        correct: 0
     },
 
     {
         question: "",
         answers: [""],
-        correct: 4
+        correct: 0
     },
 
     {
         question: "",
         answers: [""],
-        correct: 5
+        correct: 0
     },
 ];
