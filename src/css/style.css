@@ -2,24 +2,85 @@
 @import url('https://fonts.googleapis.com/css2?family=Chakra+Petch:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap');
 /* Estiliza o corpo da página */
 body {
-    font-family: "Eurosoft", sans-serif; /* Define a fonte padrão */
-    background-color: rgb(6, 9, 10); /* Cor de fundo da página */
-    display: flex; /* Usa Flexbox para layout */
-    flex-direction: column; /* Alinha os itens na vertical */
-    align-items: center; /* Centraliza os itens horizontalmente */
-    justify-content: center; /* Centraliza os itens verticalmente */
-    height: 100vh; /* Preenche a altura total da viewport */
-    margin: 0; /* Remove a margem padrão */
-    padding: 0; /* Remove o padding padrão */
+
+    margin: 0 auto;
+    padding-top: 250;
+    font-family: Arial, Helvetica, sans-serif;
+    display: block;
+    text-align: left;
+    justify-content: space-between;
 }
+
+header {
+    background-color: rgb(174, 17, 0);
+    padding: 10px;
+    
+}
+.dentro {
+    background-color: white;
+    border-radius: 40rem;
+    margin-left: 5px;
+    padding: 0,5px;
+}
+.questao {
+    background: darkred; /* Cor de fundo dos itens */
+    color: white;
+    font-size: 20px;
+    border-radius: 0.9rem; /* Borda arredondada */
+    padding: 4rem; /* Espaçamento interno */
+    margin-bottom: 1rem; /* Espaçamento abaixo dos itens */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Sombra leve */
+    margin-top: 50px;
+    width: 20%;
+    height: 25px;
+    padding-top: 50px ;
+    padding-left: 12rem;
+    padding-right: 12rem;
+    text-align: center;
+}
+
+.super{
+
+    place-items: center; /* Centraliza tanto horizontalmente quanto verticalmente */
+  }
+  
+
+.principal{
+    display: flex;
+    margin-left: 10px;
+  
+
+}
+
+.alter{
+    background: gray; /* Cor de fundo dos itens */
+    color: white;
+    font-size: 15px;
+    border-radius: 0.9rem; /* Borda arredondada */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Sombra leve */
+    width: 30%;
+    text-align: center;
+    height: 45px;
+      margin: 60px;
+  padding: 30px;
+  border: 2px solid black;
+  box-shadow: blanchedalmond;
+}
+
+
 /* Estiliza os títulos h1 */
 h1 {
     font-size: 2.5rem; /* Tamanho da fonte */
-    color: white; /* Cor do texto */
+    color: black; /* Cor do texto */
     text-align: center; /* Alinha o texto ao centro */
     letter-spacing: 0.4rem; /* Espaçamento entre letras */
 }
 /* Estiliza as seções da página */
+
+img {
+    width: 300px;
+}
+
 section {
     display: flex; /* Usa Flexbox para layout */
     flex-direction: column; /* Alinha os itens na vertical */
@@ -43,7 +104,7 @@ section button {
     margin: 4px 4px;
     border: none; /* Remove a borda padrão */
     border-radius: 1.5rem; /* Borda arredondada */
-    background-color: red; /* Cor de fundo do botão */
+    background-color: darkred; /* Cor de fundo do botão */
     color: #F5F7F8; /* Cor do texto do botão */
     font-family: "Eurosoft", sans-serif;
     font-size: 1rem; /* Tamanho da fonte */
@@ -97,15 +158,15 @@ section button:hover {
 }
 /* Estiliza o rodapé da página */
 footer {
-    background-color: red; /* Cor de fundo do rodapé */
+    background-color: darkred; /* Cor de fundo do rodapé */
     color: white; /* Cor do texto */
     text-align: center; /* Alinha o texto ao centro */
     padding: 0; /* Espaçamento interno */
     font-family: "Eurosoft", sans-serif;
     width: 1000%; /* Largura total da página */
-    position: absolute; /* Posiciona o rodapé */
     bottom: 0; /* Alinha ao fundo da página */
     font-size: 1rem; /* Tamanho da fonte */
+    display: flex;
 }
 @media (max-width: 768px) {
     h1 {
