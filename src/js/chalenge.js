@@ -1,4 +1,3 @@
-
 // INDENTIFICADOR DA PERGUNTA ATUAL
 let perguntaAtualId = 0;
 
@@ -41,7 +40,7 @@ function selecionarResposta(index) {
     elementosResposta[index].classList.add('selected');
 
     if (index === perguntaAtual.correct) {
-        score++;
+        pontuacao++;
         alert("Correto!");
     } else {
         alert("Incorreto! A resposta correta é ${perguntaAtual.answers[perguntaAtual.correct]}");
@@ -64,12 +63,23 @@ document.getElementById('botao-seguir').addEventListener('click', () => {
 function mostrarResultado() {
     const containerPergunta = document.getElementById('container-pergunta');
     const elementoResultado = document.getElementById('resultado');
+    const overlay = document.getElementById('overaly');
+    const resultCard = document.getElementById('resultCard');
+    const scoreDisplay = document.getElementById('scoreDisplay');
 
     containerPergunta.classList.add('hidden');
     elementoResultado.classList.remove('hidden');
-    elementoResultado.textContent = `Você completou o quiz! Sua pontuação final é: ${pontuacao} de ${perguntasDesafio.length}`;
+    scoreDisplay.textContent = `${pontuacao} de ${perguntasDesafio.length}`;
+    //resultElement.textContent = 'Você completou o quiz! Sua pontuação final é: ${score} de ${perguntasDesafio.length}';
+
+    resultCard.style.display = 'block';
+    overlay.style.display = 'block';
 }
 
+overlay.addEventListener('click', function() {
+    resultCard.style.display = 'none';
+    overlay.style.display = 'none';
+});
 // COMEÇAR O QUIZ
 mostrarPergunta();
 
