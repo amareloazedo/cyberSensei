@@ -3,23 +3,52 @@
 /* Estiliza o corpo da página */
 body {
     font-family: "Eurosoft", sans-serif; /* Define a fonte padrão */
-    background-color: rgb(6, 9, 10); /* Cor de fundo da página */
-    display: flex; /* Usa Flexbox para layout */
+    background-color: white; /* Cor de fundo da página */
     flex-direction: column; /* Alinha os itens na vertical */
     align-items: center; /* Centraliza os itens horizontalmente */
-    justify-content: center; /* Centraliza os itens verticalmente */
+    justify-content: center; /* Centraliza os itens verticalmente */'
     height: 100vh; /* Preenche a altura total da viewport */
     margin: 0; /* Remove a margem padrão */
     padding: 0; /* Remove o padding padrão */
+    
 }
+
+header {
+	background-color: darkred;
+	padding: 10px 0;
+    width: 100%;
+    display: flex;
+
+}
+
+.questao {
+    background: darkred; /* Cor de fundo dos itens */
+    color: white;
+    font-size: 70px;
+    border-radius: 0.9rem; /* Borda arredondada */
+    padding: 15rem; /* Espaçamento interno */
+    margin-bottom: 1rem; /* Espaçamento abaixo dos itens */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Sombra leve */
+    margin-top: 50px;
+    width: 30%;
+    text-align: center;
+    height: 10px;
+    padding-top: 50px ;
+}
+
 /* Estiliza os títulos h1 */
 h1 {
     font-size: 2.5rem; /* Tamanho da fonte */
-    color: white; /* Cor do texto */
+    color: black; /* Cor do texto */
     text-align: center; /* Alinha o texto ao centro */
     letter-spacing: 0.4rem; /* Espaçamento entre letras */
 }
 /* Estiliza as seções da página */
+
+img {
+    width: 300px;
+}
+
 section {
     display: flex; /* Usa Flexbox para layout */
     flex-direction: column; /* Alinha os itens na vertical */
@@ -43,7 +72,7 @@ section button {
     margin: 4px 4px;
     border: none; /* Remove a borda padrão */
     border-radius: 1.5rem; /* Borda arredondada */
-    background-color: red; /* Cor de fundo do botão */
+    background-color: darkred; /* Cor de fundo do botão */
     color: #F5F7F8; /* Cor do texto do botão */
     font-family: "Eurosoft", sans-serif;
     font-size: 1rem; /* Tamanho da fonte */
@@ -97,15 +126,15 @@ section button:hover {
 }
 /* Estiliza o rodapé da página */
 footer {
-    background-color: red; /* Cor de fundo do rodapé */
+    background-color: darkred; /* Cor de fundo do rodapé */
     color: white; /* Cor do texto */
     text-align: center; /* Alinha o texto ao centro */
     padding: 0; /* Espaçamento interno */
     font-family: "Eurosoft", sans-serif;
     width: 1000%; /* Largura total da página */
-    position: absolute; /* Posiciona o rodapé */
     bottom: 0; /* Alinha ao fundo da página */
     font-size: 1rem; /* Tamanho da fonte */
+    display: flex;
 }
 @media (max-width: 768px) {
     h1 {
